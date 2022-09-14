@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QNA</title>
+    <!-- google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Font awesome cdn-->
+    <script src="https://kit.fontawesome.com/cb1f6059b6.js" crossorigin="anonymous"></script>
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <main class="container mx-auto mt-16 h-screen ">
+        <div class="mb-20">
+            <h1 style="font-family: 'Lobster', cursive;" class="text-6xl text-center text-blue-600 mt-10 mb-2">Featured
+                Blogs
+            </h1>
+            <img src="./img/./remove-bg.png" class="w-80 mx-auto" alt="">
+        </div>
+
+        <!-- accordion -->
+        <section class="grid grid-cols-12 justify-center items-center">
+            <div class="col-span-2"></div>
+            <div class="col-span-8">
+                <div class="blog-item-one mb-3">
+                    <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                        <div class="collapse-title text-xl font-medium">
+                            What is the difference between local storage and session storage ?
+                        </div>
+                        <div class="collapse-content">
+                            <ul>
+                                <li>1. If we close the tab then <strong>Session storage</strong> data will be removed
+                                    but <strong>Local storage</strong> data still appear in the browser</li>
+                                <li>2. The storage capacity of <strong>Session storage</strong> is 5 MB. On the other
+                                    hand, <strong>Local storage</strong> memory capacity is 10 MB</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item-two mb-3">
+                    <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                        <div class="collapse-title text-xl font-medium">
+                            What is the difference between Global scope and Block scope ?
+                        </div>
+                        <div class="collapse-content">
+                            <ul class="list-none">
+                                <li class="mb-2">1. When a variable declared out side the any function or curly braces
+                                    it means variable declared globally. On the other hand when a variable declared in
+                                    the curly braces that means the variable declared locally or block scoped.</li>
+                                <li class="mb-2">2. Globally declared variable can be access any where. But the variable
+                                    which is declared in the block scope can not access out side the block scope.</li>
+                                <li class="mb-2">3. <strong>Var</strong> is global scoped. <strong>Let</strong> and
+                                    <strong>Const</strong> both are blocked scope.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item-three mb-3">
+                    <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                        <div class="collapse-title text-xl font-medium">
+                            How does event loop works ?
+                        </div>
+                        <div class="collapse-content">
+                            <ul class="list-none">
+                                In the browser basically, <strong>Event Loop</strong> works between call stack and
+                                webApi.
+                                When call stack find any asynchronous function it do not execute it self. Its handover
+                                that function to webAPI. After processing that function webAPI hand over that function
+                                to event Loop. Then event loop seeing call stack is empty? if call stack has empty then
+                                the
+                                event loop sent that function to call stack for execute.
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item-four mb-3">
+                    <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+                        <div class="collapse-title text-xl font-medium">
+                            How many ways to get undefined in javaScript ?
+                        </div>
+                        <div class="collapse-content">
+                            <p>In javaScript we can get undefined by 8 ways ---></p>
+                            <ol class="list-none">
+                                <li>1. If do not assign value in a variable it's value would be undefined.</li>
+                                <li>2. If do not return anything from a function.</li>
+                                <li>3. If did not pass any parameter to a function.</li>
+                                <li>4. When we do not said specifically what to return than js return undefined.</li>
+                                <li>5. When we try to access a property from an object which do not exists it will be
+                                    returned undefined.</li>
+                                <li>6. When we try to get any array index element which is do not exists it will be
+                                    returned undefined.</li>
+                                <li>7. If we delete any array element then which value will be undefined.</li>
+                                <li>8. If we set undefined value to a variable.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-2"></div>
+        </section>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
